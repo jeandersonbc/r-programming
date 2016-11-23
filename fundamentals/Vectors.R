@@ -26,5 +26,16 @@ seq(1, 10, 5)
 
 rep(1, 10) # replicates the first value X times (second param)
 rep("a", 2) # replicating character "a" 2 times
-rep(c(1,2,3), 2) # replicating vector 1,2,3 2 times
-rep(seq(1,10,2), 3) # replicating this other sequence 3 times
+rep(c(1, 2, 3), 2) # replicating vector 1,2,3 2 times
+rep(seq(1, 10, 2), 3) # replicating this other sequence 3 times
+
+# BRACKETS OPERATOR
+w <- seq(1, 10)
+w[1]   # vectors are 1-indexed
+w[10]  # we can use brackets to access data
+w[1:5] # or even use slices!
+w[-2]  # all but the element at index 2
+
+# we can ignore more than one element using a vector of indexes to ignore
+w[c(-1,-3,-5)]
+w[-1:-5]
